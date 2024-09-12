@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "typeRoots": [
+      "node_modules/@types",
+      "@types"
+    ],
+    "paths": {
+      "@types/*": ["@types/*"]
+    },
+    "allowImportingTsExtensions": true,  
+    "noEmit": true    
+  },
+  "include": [
+    "**/*.ts",
+    "@types/**/*.d.ts",
+    "services/countries/countriesService.ts"
+, "middlewares/jwtServices.ts"  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
